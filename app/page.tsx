@@ -1,64 +1,98 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#0f1115] text-[#f3f1ec]">
-      <div className="max-w-7xl mx-auto px-8 py-16">
+    <div className="min-h-screen bg-[#0f172a] text-white flex">
+      
+      {/* Sidebar */}
+      <aside className="w-64 bg-[#111827] border-r border-slate-700 p-6">
+        <h1 className="text-2xl font-bold mb-8 text-emerald-400">
+          Mind Gardein
+        </h1>
 
-        <div className="mb-16">
-          <p className="uppercase tracking-[0.3em] text-[#e7a977] text-sm">
-            Personal Knowledge Garden
-          </p>
-
-          <h1 className="text-7xl font-bold mt-4">
-            Mind Gardein
-          </h1>
-
-          <p className="text-zinc-400 mt-6 max-w-2xl text-xl">
-            Grow knowledge. Cultivate expression.
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-4 gap-6 mb-12">
-
-          <div className="rounded-3xl bg-[#181c22] p-6">
-            <p className="text-zinc-500">Words</p>
-            <h2 className="text-4xl mt-2">0</h2>
-          </div>
-
-          <div className="rounded-3xl bg-[#181c22] p-6">
-            <p className="text-zinc-500">Topics</p>
-            <h2 className="text-4xl mt-2">0</h2>
-          </div>
-
-          <div className="rounded-3xl bg-[#181c22] p-6">
-            <p className="text-zinc-500">Streak</p>
-            <h2 className="text-4xl mt-2">0</h2>
-          </div>
-
-          <div className="rounded-3xl bg-[#181c22] p-6">
-            <p className="text-zinc-500">Recall</p>
-            <h2 className="text-4xl mt-2">0%</h2>
-          </div>
-
-        </div>
-
-        <div className="rounded-[40px] bg-[#181c22] p-10">
-
-          <h2 className="text-5xl font-bold mb-6">
-            Welcome to your garden.
-          </h2>
-
-          <p className="text-zinc-400 max-w-2xl text-lg">
-            Store words, deepen understanding,
-            strengthen memory and improve articulation.
-          </p>
-
-          <button className="mt-8 px-8 py-4 rounded-full bg-[#e7a977] text-black font-semibold">
-            Start Daily Recall
+        <nav className="space-y-3">
+          <button className="w-full text-left p-3 rounded-lg bg-slate-800 hover:bg-slate-700">
+            Dashboard
           </button>
 
+          <button className="w-full text-left p-3 rounded-lg hover:bg-slate-700">
+            Dictionary
+          </button>
+
+          <button className="w-full text-left p-3 rounded-lg hover:bg-slate-700">
+            Vault
+          </button>
+
+          <button className="w-full text-left p-3 rounded-lg hover:bg-slate-700">
+            Daily Recall
+          </button>
+
+          <button className="w-full text-left p-3 rounded-lg hover:bg-slate-700">
+            Analytics
+          </button>
+
+          <button className="w-full text-left p-3 rounded-lg hover:bg-slate-700">
+            Settings
+          </button>
+        </nav>
+      </aside>
+
+      {/* Main Content */}
+      <main className="flex-1 p-10">
+
+        <h2 className="text-4xl font-bold mb-2">
+          Welcome Back
+        </h2>
+
+        <p className="text-slate-400 mb-8">
+          Build your personal knowledge garden.
+        </p>
+
+        <div className="grid md:grid-cols-3 gap-6 mb-10">
+
+          <div className="bg-slate-800 rounded-2xl p-6">
+            <h3 className="text-slate-400 mb-2">
+              الكلمات
+            </h3>
+
+            <p className="text-4xl font-bold">
+              0
+            </p>
+          </div>
+
+          <div className="bg-slate-800 rounded-2xl p-6">
+            <h3 className="text-slate-400 mb-2">
+              المواضيع
+            </h3>
+
+            <p className="text-4xl font-bold">
+              0
+            </p>
+          </div>
+
+          <div className="bg-slate-800 rounded-2xl p-6">
+            <h3 className="text-slate-400 mb-2">
+              التذكر
+            </h3>
+
+            <p className="text-4xl font-bold">
+              0%
+            </p>
+          </div>
+
         </div>
 
-      </div>
-    </main>
+        <div className="bg-slate-800 rounded-2xl p-6">
+
+          <h3 className="text-2xl font-bold mb-4">
+            Dictionary
+          </h3>
+
+          <p className="text-slate-400">
+            لم تتم إضافة كلمات بعد.
+          </p>
+
+        </div>
+
+      </main>
+    </div>
   );
 }
